@@ -4,6 +4,6 @@ provider "aws" {
 }
 
 resource "aws_instance" "my_instance" {
-    ami = va
+    ami = var.image
   
 }
