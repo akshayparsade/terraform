@@ -1,4 +1,4 @@
-provider "az" {
+provider "azure" {
     region = "us-east-1"
   
 }
