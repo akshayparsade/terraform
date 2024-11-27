@@ -10,3 +10,9 @@ provider "aws" {
    
  }
  
+ variable "image_id" {
+    type = string
+    default = "ami-0453ec754f44f9a4a"
+    description = "Enter AMI ID"
+   
+ }
