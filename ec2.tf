@@ -10,3 +10,7 @@ resource "aws_instance" "my_instance" {
     security_groups = ["default"]
 }
 
+variable "image_id" {
+  
+}
+
