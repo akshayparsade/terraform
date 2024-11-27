@@ -3,6 +3,6 @@ provider "aws" {
   
 }
 
-resource "aws_instance" "my_" {
+resource "aws_instance" "my_instance" {
   
 }
