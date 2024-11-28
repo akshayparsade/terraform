@@ -26,6 +26,7 @@ variable "key_name" {
 }
 
 variable "sg_name" {
-    default = 
+    type = list()
+    default = ["default"]
   
 }
