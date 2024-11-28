@@ -25,6 +25,6 @@ variable "key_name" {
     default = N.Vergi_key
 }
 
-variable "" {
+variable "sg_name" {
   
 }
