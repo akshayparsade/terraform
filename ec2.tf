@@ -22,6 +22,5 @@ variable "instance_type" {
 }
  
 variable "key_name" {
-    default = 
-  
+    default = N.Vergi_key
 }
