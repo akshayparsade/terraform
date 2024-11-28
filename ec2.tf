@@ -18,6 +18,6 @@ variable "image_id" {
 }
 
 variable "instance_type" {
-    ty
+    default = instance_type
   
 }
