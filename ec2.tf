@@ -10,3 +10,26 @@ resource "aws_instance" "my_instance" {
     security_groups = ["default"]
 }
   
+  terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.16"
+    }
+  }
+
+  required_version = ">= 1.2.0"
+}
+
+provider "aws" {
+    profile = "default"
+}
+
+resource "aws_s3_bucket" "test-bucket-terraform-regergjegreg" {
+  bucket = "test-bucket-terraform-regergjegreg"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
