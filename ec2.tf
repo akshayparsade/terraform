@@ -4,6 +4,7 @@ provider "aws" {
   
 }
 
-resource "aws_instance" "instance" {
+resource "aws_instance" "instance_1" {
+    ami = ""
   
 }
