@@ -25,11 +25,4 @@ provider "aws" {
     profile = "default"
 }
 
-resource "aws_s3_bucket" "test-bucket-terraform-regergjegreg" {
-  bucket = "test-bucket-terraform-regergjegreg"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
+resource "aws_s3_bucket" "test-bucket-terraf
