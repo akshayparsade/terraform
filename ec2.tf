@@ -13,5 +13,6 @@ resource "aws_instance" "my_instance" {
 variable "image_id" {
     type = string
     default = ""
+    default = ""
   
 }
