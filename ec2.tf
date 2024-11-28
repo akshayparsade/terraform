@@ -14,7 +14,7 @@ resource "aws_instance" "my_instance" {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.16"
+      version = "~> 1.9."
     }
   }
 
