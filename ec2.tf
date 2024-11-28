@@ -10,10 +10,3 @@ resource "aws_instance" "my_instance" {
     security_groups = ["default"]
 }
 
-variable "image_id" {
-    type = string
-    default = "ami-0453ec754f44f9a4a"
-    description = "Enter : AMI ID"
-  
-}
-
