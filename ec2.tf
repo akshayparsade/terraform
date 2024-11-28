@@ -16,3 +16,4 @@ variable "image_id" {
     description = "Enter AMI ID"
 
 }
+
