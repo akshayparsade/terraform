@@ -9,4 +9,3 @@ resource "aws_instance" "my_instance" {
     key_name = "N.Vergi_key"
     security_groups = ["default"]
 }
-
