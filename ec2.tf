@@ -6,9 +6,9 @@ provider "aws" {
 resource "aws_instance" "my_instance" {
     ami = var.image_id
     instance_type = var.instance_type
-    key_name = var
+    key_name = var.key_name
     security_groups = ["default"]
-}
+
 
 variable "image_id" {
     type = string
