@@ -12,6 +12,8 @@ resource "aws_security_group" "my_sg" {
     to_port           = 80
     cidr_blocks       = ["0.0.0.0/0"]
   }
+   
+   ip_protocol       = "TCP"  # -1 for all ip_protocol 
   
   # outbound
   egress {
