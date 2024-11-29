@@ -10,7 +10,7 @@ resource "aws_security_group" "my_sg" {
     from_port         = 80
     ip_protocol       = "tcp" # -1 for all ip_protocol 
     to_port           = 80
-    cidr_blocks 
+    cidr_blocks       = ["0.0.0.0/0"]
 
   }
   
