@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "my_sg" {
-  sg_name
+  name
   from_port         = 443
   ip_protocol       = "tcp"
   to_port           = 443
