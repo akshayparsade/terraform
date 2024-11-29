@@ -13,7 +13,7 @@ resource "aws_security_group" "my_sg" {
     cidr_blocks       = ["0.0.0.0/0"]
   }
    
-   ip_protocol       = "TCP"  # -1 for all ip_protocol 
+   #ip_protocol       = "TCP"  # -1 for all ip_protocol 
   
   # outbound
   egress {
