@@ -21,7 +21,6 @@ resource "aws_security_group" "my_sg" {
     cidr_blocks       = ["0.0.0.0/0"]
   }
 
-  
 }
 
 resource "aws_instance" "my_instance" {
