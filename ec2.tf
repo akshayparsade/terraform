@@ -3,7 +3,7 @@ provider "aws" {
   
 }
 
-resource "aws_security_group" "" {
+resource "aws_security_group" "my_sg" {
   security_group_id = aws_security_group.allow_tls.id
   cidr_ipv4         = aws_vpc.main.cidr_block
   from_port         = 443
