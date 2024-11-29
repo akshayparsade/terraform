@@ -27,5 +27,5 @@ variable "key_name" {
 variable "sg_name" {
     type = list
     default = ["default"]
-  
+
 }
