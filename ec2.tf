@@ -3,7 +3,7 @@ provider "aws" {
   
 }
 
-resource "aws_security_group"_ingress_rule" "allow_tls_ipv4" {
+resource "aws_security_group" "" {
   security_group_id = aws_security_group.allow_tls.id
   cidr_ipv4         = aws_vpc.main.cidr_block
   from_port         = 443
