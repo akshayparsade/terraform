@@ -28,7 +28,7 @@ resource "aws_instance" "my_instance" {
     instance_type = var.instance_type
     key_name = var.key_name
     #security_groups = var.sg_name
-    vpc_security_group_ids = 
+    vpc_security_group_ids = [""]
 }    
 
 variable "image_id" { 
