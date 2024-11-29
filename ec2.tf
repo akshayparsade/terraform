@@ -8,7 +8,7 @@ resource "aws_security_group" "my_sg" {
   description ="allow HTTP Port"
   ingress {  # for inbound
     from_port         = 80
-    ip_protocol       = "TCP" 
+    protocol       = "TCP" 
     to_port           = 80
     cidr_blocks       = ["0.0.0.0/0"]
   }
@@ -18,7 +18,7 @@ resource "aws_security_group" "my_sg" {
   # outbound
   egress {
     from_port         = 0
-    ip_protocol       = "-1"  
+    protocol       = "-1"  
     to_port           = 0
     cidr_blocks       = ["0.0.0.0/0"]
   }
