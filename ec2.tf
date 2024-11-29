@@ -7,11 +7,12 @@ resource "aws_security_group" "my_sg" {
   name = "my_sg"
   description ="allow HTTP Port"
   ingress {
-    
-  }
-  from_port         = 443
+    from_port         = 443
   ip_protocol       = "tcp"
   to_port           = 443
+
+  }
+  
 }
 
 resource "aws_instance" "my_instance" {
