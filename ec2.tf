@@ -3,7 +3,7 @@ provider "aws" {
   
 }
 
-
+resource "
 
 resource "aws_instance" "my_instance" {
     ami = var.image_id
