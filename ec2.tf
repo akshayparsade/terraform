@@ -54,4 +54,6 @@ variable "key_name" {
 #
 }
 
-output "demo" 
+output "demo" {
+  values = "Hello Wor
+}
