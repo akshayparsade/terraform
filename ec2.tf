@@ -3,6 +3,7 @@ provider "aws" {
   
 }
 
+data =
 resource "aws_security_group" "my_sg" {
   name = "my_sg"
   description ="allow HTTP Port"
