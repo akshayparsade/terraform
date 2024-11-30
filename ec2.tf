@@ -54,5 +54,5 @@ variable "key_name" {
 #}
 
 output "demo" {
-  value = "Hello World"
+    value = "Hello World"
 }
