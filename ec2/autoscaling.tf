@@ -1,1 +1,1 @@
-resource "aws_launch_configuration" 
+resource "aws_launch_configuration" "lc_home
