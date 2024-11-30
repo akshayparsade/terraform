@@ -57,4 +57,6 @@ output "demo" {
     value = "Hello World"
 }
 
-output "public_ip" 
+output "public_ip" {
+  value
+}
