@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 data "aws_key_pair" "my_key"{
-  key_name = 
+  key_name = "new-key-
 }
 resource "aws_security_group" "my_sg" {
   name = "my_sg"
