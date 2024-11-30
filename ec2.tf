@@ -36,6 +36,7 @@ resource "aws_instance" "my_instance" {
        yum install httpd -y
        systemctl start httpd
        systemctl enable httpd
+    EOF   
 }    
 
 variable "image_id" { 
