@@ -53,3 +53,5 @@ variable "key_name" {
 #  default = ["default"]
 #
 }
+
+output "demo" 
