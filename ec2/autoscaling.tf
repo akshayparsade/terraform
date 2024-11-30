@@ -1,5 +1,5 @@
 resource "aws_launch_configuration" "lc_home" {
-    image_id = 
+    image_id = var.image_id
     instance_type = "t2.micro"
     key_name =
     security_groups =
@@ -7,5 +7,5 @@ resource "aws_launch_configuration" "lc_home" {
     apt install httpd
     systemctl start httpd
     systemctl enable httpd
-    
+
 }
