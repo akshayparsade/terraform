@@ -3,7 +3,6 @@ provider "aws" {
   
 }
 
-data =
 resource "aws_security_group" "my_sg" {
   name = "my_sg"
   description ="allow HTTP Port"
@@ -33,7 +32,6 @@ resource "aws_instance" "my_instance" {
     #security_groups = var.sg_name
     vpc_security_group_ids = [aws_security_group.my_sg.id]
     subnet_id = var.subnet_id
-    subnet_id = 
     user_data = <<-EOF
        #!/bin/bash
        yum install httpd -y
