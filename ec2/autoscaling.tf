@@ -4,5 +4,6 @@ resource "aws_launch_configuration" "lc_home" {
     key_name =
     security_groups =
     user_data = <<-EOF
-    apt install 
+    apt install httpd
+    sys
 }
