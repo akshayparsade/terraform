@@ -51,7 +51,7 @@ variable "instance_type" {
 }
  
 #variable "key_name" {
-    default = "N.Vergi_key"
+#    default = "N.Vergi_key"
 #}
 
 #variable "sg_name" {
