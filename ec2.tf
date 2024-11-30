@@ -3,7 +3,7 @@ provider "aws" {
   
 }
 
-data "aws_key_pair" 
+data "aws_key_pair" "my_key"
 resource "aws_security_group" "my_sg" {
   name = "my_sg"
   description ="allow HTTP Port"
