@@ -58,5 +58,5 @@ output "demo" {
 }
 
 output "public_ip" {
-  value
+  value = aws_instance
 }
