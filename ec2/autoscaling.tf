@@ -1,3 +1,4 @@
 resource "aws_launch_configuration" "lc_home" {
-    image_id 
+    image_id = 
+    instance_type = "t2"
 }
