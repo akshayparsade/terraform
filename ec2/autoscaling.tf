@@ -5,5 +5,7 @@ resource "aws_launch_configuration" "lc_home" {
     security_groups =
     user_data = <<-EOF
     apt install httpd
-    sys
+    systemctl start httpd
+    systemctl enable httpd
+    
 }
