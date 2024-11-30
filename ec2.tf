@@ -48,8 +48,8 @@ variable "key_name" {
     default = "N.Vergi_key"
 }
 
-variable "sg_name" {
-    type = list
-    default = ["default"]
-
+#variable "sg_name" {
+#   type = list
+#  default = ["default"]
+#
 }
