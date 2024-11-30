@@ -54,6 +54,10 @@ variable "key_name" {
     default = "N.Vergi_key"
 }
 
+variable "subnet_id" {
+  default ="subnet-0e36116a3c0a403ac"
+}
+
 #variable "sg_name" {
 #   type = list
 #  default = ["default"]
