@@ -3,9 +3,6 @@ provider "aws" {
   
 }
 
-data "aws_key_pair" "my_key"{
-  key_name = "new-key-nv"
-}
 resource "aws_security_group" "my_sg" {
   name = "my_sg"
   description ="allow HTTP Port"
@@ -31,9 +28,8 @@ resource "aws_security_group" "my_sg" {
 resource "aws_instance" "my_instance" {
     ami = var.image_id
     instance_type = var.instance_type
-    #key_name = var.key_name
+    key_name = var.key_name
     #security_groups = var.sg_name
-    key_name = data.
     vpc_security_group_ids = [aws_security_group.my_sg.id]
     user_data = <<-EOF
        #!/bin/bash
@@ -54,9 +50,9 @@ variable "instance_type" {
     default = "t2.micro"   
 }
  
-#variable "key_name" {
-#    default = "N.Vergi_key"
-#}
+variable "key_name" {
+    default = "N.Vergi_key"
+}
 
 #variable "sg_name" {
 #   type = list
