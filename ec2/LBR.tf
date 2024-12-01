@@ -54,7 +54,7 @@ resource "aws_lb_listener" "my_lb_listener" {
   }
 }
 
-resource "my_lb_listener_rule" "my_lb_listener_rule" {
+resource "my_lb_listener_rule" "my_lb_listener_rule_laptop" {
   listener_arn = my_lb_listener.my_lb_listene.arn
   priority     = 100
 
