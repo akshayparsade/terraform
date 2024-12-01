@@ -115,8 +115,8 @@ resource "aws_autoscaling_group" "asg_cloth" {
 }
 
 resource "aws_autoscaling_policy" "asg_policy_cloth" {
-  autoscaling_group_name = "aws_autoscaling_group.asg_home.name"
-  name                   = "asg_policy_home"
+  autoscaling_group_name = "aws_autoscaling_group.asg_home.cloth"
+  name                   = "asg_policy_cloth"
   policy_type            = "PredictiveScaling"
   predictive_scaling_configuration {
     metric_specification {
