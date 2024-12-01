@@ -4,7 +4,8 @@ resource "aws_security_group" "my_sg"{
     ingress {
         from_port  = 80
         to_port  =
-        pro
+        protocol 
+        
     }
 }
 resource "aws_launch_configuration" "lc_home" {
