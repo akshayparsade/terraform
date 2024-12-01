@@ -81,7 +81,7 @@ resource "my_lb_listener_rule" "my_lb_listener_cloth" {
 
   condition {
     path_pattern {
-      values = ["/laptop*"]
+      values = ["/cloth*"]
     }
   }
 }
