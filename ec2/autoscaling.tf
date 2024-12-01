@@ -1,4 +1,5 @@
 resource "aws_security_group" "my_sg"{
+    name = "my_sg"
     
 }
 resource "aws_launch_configuration" "lc_home" {
