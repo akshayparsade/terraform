@@ -19,7 +19,7 @@ resource "aws_launch_configuration" "lc_home" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_pair
-    security_groups = var.https://github.com/ashokitschool/kubernetes_statefulset_ymls.git
+    security_groups = var.
     user_data = <<-EOF
     #!/bin/bash
     apt install httpd -y
