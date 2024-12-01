@@ -69,7 +69,7 @@ resource "aws_autoscaling_group" "asg_home" {
 }
 
 resource "aws_autoscaling_policy" "example" {
-  autoscaling_group_name = "asg_home "
+  autoscaling_group_name = "aws_autoscaling_group"
   name                   = "foo"
   policy_type            = "PredictiveScaling"
   predictive_scaling_configuration {
