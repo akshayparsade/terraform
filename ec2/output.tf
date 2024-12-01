@@ -1,1 +1,3 @@
-output "lb_endpoint
+output "lb_endpoint" {
+    value = aws
+}
