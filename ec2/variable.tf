@@ -13,3 +13,7 @@ variable "key_pair" {
 variable "subnet_id_1" {
     default = ""
 }
+
+variable "subnet_id_2" {
+    default = ""
+}
