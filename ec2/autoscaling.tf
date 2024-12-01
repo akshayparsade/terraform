@@ -1,5 +1,5 @@
 resource "aws_security_group" "my_sg"{
-    name = "my_sg"
+    name = "allow"
     description ="allow HTTP Port"
     ingress {
         from_port  = 80
