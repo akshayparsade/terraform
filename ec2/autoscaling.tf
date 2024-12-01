@@ -29,7 +29,7 @@ resource "aws_launch_configuration" "lc_home" {
     EOF 
 }
 
-resource "aws_launch_configuration" "lc_la" {
+resource "aws_launch_configuration" "lc_laptop" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_pair
