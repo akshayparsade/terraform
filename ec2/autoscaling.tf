@@ -32,7 +32,6 @@ resource "aws_launch_template" "lc_laptop" {
     vpc_security_group_ids = [aws_security_group.my_sg.id]
     user_data = filebase64("./laptop.sh")
 }
-}
 
 #cloth
 resource "aws_launch_template" "lc_cloth" {
@@ -40,7 +39,8 @@ resource "aws_launch_template" "lc_cloth" {
     instance_type = var.instance_type
     key_name = var.key_pair
     vpc_security_group_ids = [aws_security_group.my_sg.id]
-    user_data = 
+    user_data = filebase64("./home.sh")
+}
 }
 
 resource "aws_autoscaling_group" "asg_home" {
