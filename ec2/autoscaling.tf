@@ -10,7 +10,7 @@ resource "aws_security_group" "my_sg"{
     egress{
         from_port = 0
         to_port = 0
-        
+        protocol ="
     }
 
 }
