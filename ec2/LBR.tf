@@ -40,6 +40,7 @@ resource "aws_lb" "my_lb" {
 
   tags = {
     app = "my-app" 
+    env = "dev"
   }
 }
 
