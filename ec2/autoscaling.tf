@@ -123,7 +123,7 @@ resource "aws_autoscaling_group" "asg_cloth" {
   desired_capacity     = 2
   launch_template {
     id = aws_launch_template.lt_home.id
-    version = aws_launch_template.lt_home.latest_version
+    version = aws_launch_template.lt_cloth.latest_version
   }
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_2]
   target_group_arns = [aws_lb_target_group.tg_cloth.arn]
