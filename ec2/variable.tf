@@ -11,11 +11,11 @@ variable "key_pair" {
 }
 
 variable "subnet_id_1" {
-    default = "subnet-02d25c02f29880baf"
+    default = "subnet-09a019ad28451cb42"
 }
  
 variable "subnet_id_2" {
-    default = "ssubnet-0aac62ec5887c6aad"
+    default = "subnet-007ef2801e52a235b"
 }
 
 variable "vpc_id"{
