@@ -1,3 +1,3 @@
 output "lb_endpoint" {
-    value = aws
+    value = aws_lb.my
 }
