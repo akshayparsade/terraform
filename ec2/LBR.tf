@@ -2,6 +2,7 @@ resource "aws_lb_target_group" "tg_home" {
     name = "tg_home"
     port = 80
     protocol = "HTTP"
+    VPC_
     health_check {
         path ="/"
         port = 80
