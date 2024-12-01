@@ -55,6 +55,6 @@ resource "aws_launch_configuration" "lc_cloth" {
     systemctl start httpd
     systemctl enable httpd
     mkdir /var/www/html/cloth
-    echo "<h1> This is Page </h1> <br> <h2> Welcome to laptops </h2> > /var/www/html/laptop/index.html 
+    echo "<h1> This is Clothing Page </h1> <br> <h2> Welcome to laptops </h2> > /var/www/html/laptop/index.html 
     EOF 
 }
