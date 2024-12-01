@@ -1,4 +1,4 @@
-<<-EOF
+
     #!/bin/bash
     apt install httpd -y
     systemctl start httpd
