@@ -75,6 +75,6 @@ output "demo" {
 #  value = aws_instance.my_instance.public_ip
 #}
 
-output "arn_subnet" {
-  value = data.aws_subnet.my_subnet.arn
-}
+#output "arn_subnet" {
+#  value = data.aws_subnet.my_subnet.arn
+#}
