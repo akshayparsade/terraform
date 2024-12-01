@@ -1,7 +1,9 @@
 resource "aws_security_group" "my_sg"{
     name = "my_sg"
     description ="allow HTTP Port"
-    in
+    ingress {
+        
+    }
 }
 resource "aws_launch_configuration" "lc_home" {
     image_id = var.image_id
