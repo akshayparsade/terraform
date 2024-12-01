@@ -39,7 +39,7 @@ resource "aws_lb" "test" {
   subnets            = [for subnet in aws_subnet.public : subnet.id]
 
   tags = {
-    app = "production"
+    app = "my-app"
   }
 }
 
