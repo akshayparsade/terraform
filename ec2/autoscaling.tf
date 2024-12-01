@@ -30,7 +30,8 @@ resource "aws_launch_template" "lc_laptop" {
     instance_type = var.instance_type
     key_name = var.key_pair
     vpc_security_group_ids = [aws_security_group.my_sg.id]
-    user_data = 
+    user_data = user_data = filebase64("./home.sh")
+}
 }
 
 #cloth
