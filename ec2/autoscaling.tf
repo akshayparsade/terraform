@@ -4,8 +4,8 @@ resource "aws_security_group" "my_sg"{
     ingress {
         from_port  = 80
         to_port    = 80
-        protocol   = 
-        cidr_blocks  
+        protocol   = "TCP"
+        cidr_blocks = [] 
     }
 }
 resource "aws_launch_configuration" "lc_home" {
