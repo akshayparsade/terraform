@@ -2,4 +2,6 @@ variable "image_id" {
     default = ""
 }
 
-variable "i"
+variable "instance_type" {
+    
+}
