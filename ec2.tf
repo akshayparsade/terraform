@@ -62,9 +62,9 @@ variable "key_name" {
 #  default ="subnet-0e36116a3c0a403ac"
 #}
 
-#variable "sg_name" {
-#   type = list
-#  default = ["default"]
+variable "sg_name" {
+  type = list
+  default = ["default"]
 #}
 
 output "demo" {
