@@ -1,4 +1,6 @@
-resource "aws_sec_grp"
+resource "aws_security_group" "my_sg"{
+    
+}
 resource "aws_launch_configuration" "lc_home" {
     image_id = var.image_id
     instance_type = var.instance_type
