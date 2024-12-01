@@ -3,8 +3,8 @@ resource "aws_security_group" "my_sg"{
     description ="allow HTTP Port"
     ingress {
         from_port  = 80
-        to_port  =
-        protocol 
+        to_port    = 80
+        protocol   = 
         cidr_blocks  
     }
 }
