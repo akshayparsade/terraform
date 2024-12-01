@@ -83,11 +83,11 @@ resource "aws_autoscaling_policy" "asg_policy_home" {
 }
 
 resource "aws_autoscaling_group" "asg_laptop" {
-  name                 = "asg_home"
+  name                 = "asg_laptop"
   max_size             = 4
   min_size             = 2
   desired_capacity     = 2
-  launch_configuration = aws_launch_configuration.lc_home
+  launch_configuration = aws_launch_configuration.lc_laptop
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_2]
 }
 
