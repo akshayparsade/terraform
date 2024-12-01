@@ -117,6 +117,8 @@ resource "aws_autoscaling_group" "asg_cloth" {
   desired_capacity     = 2
   launch_configuration = aws_launch_configuration.lc_cloth
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_2]
+  target_group_arns = [aws_lb_target_group.tg_.arn]
+
 }
 
 resource "aws_autoscaling_policy" "asg_policy_cloth" {
