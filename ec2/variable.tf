@@ -1,3 +1,3 @@
 variable "image_id" {
-    defa
+    default = ""
 }
