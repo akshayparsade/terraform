@@ -1,1 +1,1 @@
-output "lb
+output "lb_endpoint
