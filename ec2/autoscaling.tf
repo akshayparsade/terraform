@@ -82,7 +82,7 @@ resource "aws_autoscaling_policy" "asg_policy_home" {
   }
 }
 
-resource "aws_autoscaling_group" "asg_home" {
+resource "aws_autoscaling_group" "asg_laptop" {
   name                 = "asg_home"
   max_size             = 4
   min_size             = 2
