@@ -16,7 +16,7 @@ resource "aws_security_group" "my_sg"{
 }
 
 #Home
-resource "aws_launch_configuration" "lc_home" {
+resource "aws_launch_template" "lc_home" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_pair
