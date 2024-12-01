@@ -91,7 +91,7 @@ resource "aws_autoscaling_group" "asg_laptop" {
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_2]
 }
 
-resource "aws_autoscaling_policy" "asg_policy_home" {
+resource "aws_autoscaling_policy" "asg_policy_laptop" {
   autoscaling_group_name = "aws_autoscaling_group.asg_home.name"
   name                   = "asg_policy_home"
   policy_type            = "PredictiveScaling"
