@@ -45,6 +45,7 @@ resource "aws_launch_configuration" "lc_laptop" {
     EOF 
 }
 
+#cloth
 resource "aws_launch_configuration" "lc_cloth" {
     image_id = var.image_id
     instance_type = var.instance_type
