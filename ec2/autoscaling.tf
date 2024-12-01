@@ -105,8 +105,8 @@ resource "aws_autoscaling_policy" "asg_policy_laptop" {
   }
 }
 
-resource "aws_autoscaling_group" "asg_home" {
-  name                 = "asg_home"
+resource "aws_autoscaling_group" "asg_cloth" {
+  name                 = "asg_cloth"
   max_size             = 4
   min_size             = 2
   desired_capacity     = 2
