@@ -7,5 +7,5 @@ variable "instance_type" {
 }
 
 variable "key_pair" {
-    default = "N."
+    default = "N.Vergi_key"
 }
