@@ -45,14 +45,7 @@ resource "aws_launch_template" "lc_cloth" {
     instance_type = var.instance_type
     key_name = var.key_pair
     vpc_security_group_ids = [aws_security_group.my_sg.id]
-    user_data = <<-EOF
-    #!/bin/bash
-    apt install httpd -y
-    systemctl start httpd
-    systemctl enable httpd
-    mkdir /var/www/html/cloth
-    echo "<h1> This is Clothing Page </h1> <br> <h2> SALE ! SALE ! SALE !! </h2> > /var/www/html/cloth/index.html 
-    EOF 
+    user_data = 
 }
 
 resource "aws_autoscaling_group" "asg_home" {
