@@ -5,7 +5,7 @@ resource "aws_security_group" "my_sg"{
         from_port  = 80
         to_port    = 80
         protocol   = "TCP"
-        cidr_blocks = [] 
+        cidr_blocks = ["0.0.0.0/"] 
     }
 }
 resource "aws_launch_configuration" "lc_home" {
