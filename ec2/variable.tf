@@ -19,5 +19,5 @@ variable "subnet_id_2" {
 }
 
 variable "vpc_id"{
-    default = "vpc-0cf099748810f6d6c"
+    default = "vpc-0b8f7e2ec2892264a"
 }
