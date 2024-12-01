@@ -3,9 +3,10 @@ provider "aws" {
   
 }
 
-#data "aws_subnet" "my_subnet" {
-#  id = var.subnet_id
-#  }
+data "aws_subnet" "my_subnet" {
+  id = var.subnet_id
+  
+}
 resource "aws_security_group" "my_sg" {
   name = "my_sg"
   description ="allow HTTP Port"
@@ -34,7 +35,7 @@ resource "aws_instance" "my_instance" {
     key_name = var.key_name
     #security_groups = var.sg_name
     vpc_security_group_ids = [aws_security_group.my_sg.id]
-    #subnet_id = var.subnet_id
+    subnet_id = var.subnet_id
     user_data = <<-EOF
        #!/bin/bash
        yum install httpd -y
@@ -58,14 +59,14 @@ variable "key_name" {
     default = "N.Vergi_key"
 }
 
-#variable "subnet_id" {
-#  default ="subnet-0e36116a3c0a403ac"
-#}
-
-variable "sg_name" {
-  type = list
-  default = ["default"]
+variable "subnet_id" {
+  default ="subnet-0e36116a3c0a403ac"
 }
+
+#variable "sg_name" {
+#   type = list
+#  default = ["default"]
+#}
 
 output "demo" {
     value = "Hello World"
@@ -75,6 +76,6 @@ output "demo" {
 #  value = aws_instance.my_instance.public_ip
 #}
 
-#output "arn_subnet" {
-#  value = data.aws_subnet.my_subnet.arn
-#}
+output "arn_subnet" {
+  value = data.aws_subnet.my_subnet.arn
+}
