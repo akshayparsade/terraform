@@ -1,6 +1,7 @@
 resource "aws_security_group" "my_sg"{
     name = "my_sg"
-    description ="allow HTT
+    description ="allow HTTP Port"
+    in
 }
 resource "aws_launch_configuration" "lc_home" {
     image_id = var.image_id
