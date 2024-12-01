@@ -17,3 +17,4 @@ variable "subnet_id_1" {
 variable "subnet_id_2" {
     default = "subnet-050cc6904df99c2a8"
 }
+
