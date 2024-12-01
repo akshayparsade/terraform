@@ -3,9 +3,9 @@ variable "image_id" {
 }
 
 variable "instance_type" {
-    default = ""
+    default = "t2.micro"
 }
 
 variable "key_pair" {
-    default = ""
+    default = "N."
 }
