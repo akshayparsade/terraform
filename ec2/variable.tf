@@ -15,5 +15,5 @@ variable "subnet_id_1" {
 }
  
 variable "subnet_id_2" {
-    default = "subnet-050"
+    default = "subnet-050cc69"
 }
