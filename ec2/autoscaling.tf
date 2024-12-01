@@ -59,9 +59,9 @@ resource "aws_launch_configuration" "lc_cloth" {
     EOF 
 }
 
-resource "aws_autoscaling_group" "test" {
-  name                 = "foobar3-terraform-test"
-  max_size             = 5
+resource "aws_autoscaling_group" "asg_home" {
+  name                 = "asg_home"
+  max_size             = 4
   min_size             = 2
   launch_configuration = aws_launch_configuration.foobar.name
   vpc_zone_identifier  = [aws_subnet.example1.id, aws_subnet.example2.id]
