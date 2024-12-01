@@ -11,7 +11,7 @@ resource "aws_security_group" "my_sg"{
         from_port = 0
         to_port = 0
         protocol ="-1"
-        cidr_blocks =["0.0.0.0/"]
+        cidr_blocks =["0.0.0.0/0"]
     }
 
 }
@@ -19,7 +19,7 @@ resource "aws_launch_configuration" "lc_home" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_pair
-    security_groups =
+    security_groups = var.
     user_data = <<-EOF
     #!/bin/bash
     apt install httpd -y
