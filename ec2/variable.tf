@@ -6,4 +6,6 @@ variable "instance_type" {
     default = ""
 }
 
-
+variable "key_pair" {
+    
+}
