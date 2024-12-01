@@ -16,7 +16,7 @@ resource "aws_lb_target_group" "tg_laptop" {
     protocol = "HTTP"
     vpc_id = var.vpc_id
     health_check {
-        path ="/laptop/"
+        path ="/laptop/*"
         port = 80
         protocol = "HTTP"   
     }
@@ -28,7 +28,7 @@ resource "aws_lb_target_group" "tg_cloth" {
     protocol = "HTTP"
     vpc_id = var.vpc_id
     health_check {
-        path ="/cloth/"
+        path ="/cloth/*"
         port = 80
         protocol = "HTTP"   
     }
