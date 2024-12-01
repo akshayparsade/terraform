@@ -10,4 +10,4 @@ variable "key_pair" {
     default = "N.Vergi_key"
 }
 
-va
+variable "subnet_id
