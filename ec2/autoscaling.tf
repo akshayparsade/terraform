@@ -47,7 +47,7 @@ resource "aws_launch_template" "lc_laptop" {
 }
 
 #cloth
-resource "aws_launch_configuration" "lc_cloth" {
+resource "aws_launch_template" "lc_cloth" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_pair
