@@ -43,3 +43,18 @@ resource "aws_launch_configuration" "lc_laptop" {
     echo "<h1> This is laptop Page </h1> <br> <h2> Welcome to laptops </h2> > /var/www/html/laptop/index.html 
     EOF 
 }
+
+resource "aws_launch_configuration" "lc_" {
+    image_id = var.image_id
+    instance_type = var.instance_type
+    key_name = var.key_pair
+    security_groups = aws_security_group.my_sg.id
+    user_data = <<-EOF
+    #!/bin/bash
+    apt install httpd -y
+    systemctl start httpd
+    systemctl enable httpd
+    mkdir /var/www/html/laptop
+    echo "<h1> This is laptop Page </h1> <br> <h2> Welcome to laptops </h2> > /var/www/html/laptop/index.html 
+    EOF 
+}
