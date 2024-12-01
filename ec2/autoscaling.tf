@@ -31,7 +31,7 @@ resource "aws_launch_template" "lc_home" {
 }
 
 #laptop
-resource "aws_launch_configuration" "lc_laptop" {
+resource "aws_launch_template" "lc_laptop" {
     image_id = var.image_id
     instance_type = var.instance_type
     key_name = var.key_pair
