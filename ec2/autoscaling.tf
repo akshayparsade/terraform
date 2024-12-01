@@ -14,6 +14,7 @@ resource "aws_security_group" "my_sg"{
         cidr_blocks =["0.0.0.0/0"]
     }
 }
+
 #Home
 resource "aws_launch_configuration" "lc_home" {
     image_id = var.image_id
