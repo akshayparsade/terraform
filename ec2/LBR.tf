@@ -60,12 +60,12 @@ resource "my_lb_listener_rule" "my_lb_listener_rule" {
 
   action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.static.arn
+    target_group_arn = aws_lb_target_group.tg_laptop.arn
   }
 
   condition {
     path_pattern {
-      values = ["/static/*"]
+      values = ["/laptop*"]
     }
   }
 }
