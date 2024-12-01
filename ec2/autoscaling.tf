@@ -13,8 +13,8 @@ resource "aws_security_group" "my_sg"{
         protocol ="-1"
         cidr_blocks =["0.0.0.0/0"]
     }
-
 }
+
 resource "aws_launch_configuration" "lc_home" {
     image_id = var.image_id
     instance_type = var.instance_type
