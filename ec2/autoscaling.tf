@@ -36,14 +36,7 @@ resource "aws_launch_template" "lc_laptop" {
     instance_type = var.instance_type
     key_name = var.key_pair
     vpc_security_group_ids = [aws_security_group.my_sg.id]
-    user_data = <<-EOF
-    #!/bin/bash
-    apt install httpd -y
-    systemctl start httpd
-    systemctl enable httpd
-    mkdir /var/www/html/laptop
-    echo "<h1> This is laptop Page </h1> <br> <h2> Welcome to laptops </h2> > /var/www/html/laptop/index.html 
-    EOF 
+    user_data = 
 }
 
 #cloth
