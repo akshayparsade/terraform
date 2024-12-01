@@ -72,7 +72,7 @@ resource "my_lb_listener_rule" "my_lb_listener_rule_laptop" {
 
 resource "my_lb_listener_rule" "my_lb_listener_cloth" {
   listener_arn = my_lb_listener.my_lb_listene.arn
-  priority     = 100
+  priority     = 101
 
   action {
     type             = "forward"
