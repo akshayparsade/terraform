@@ -7,7 +7,8 @@ resource "aws_security_group" "my_sg"{
         protocol   = "TCP"
         cidr_blocks = ["0.0.0.0/0"] 
     }
-    en
+    engress
+    
 }
 resource "aws_launch_configuration" "lc_home" {
     image_id = var.image_id
