@@ -31,8 +31,8 @@ resource "aws_lb_target_group" "tg_cloth" {
     }
 }
 
-resource "aws_lb" "my_" {
-  name               = "test-lb-tf"
+resource "aws_lb" "my_lb" {
+  name               = "my-lb"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.lb_sg.id]
