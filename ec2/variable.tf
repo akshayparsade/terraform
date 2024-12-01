@@ -7,7 +7,7 @@ variable "instance_type" {
 }
 
 variable "key_pair" {
-    default = "N.Vergi_key"
+    default = ""
 }
 
 variable "subnet_id_1" {
