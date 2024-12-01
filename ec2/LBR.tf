@@ -55,7 +55,7 @@ resource "aws_lb_listener" "my_lb_listener" {
 }
 
 resource "my_lb_listener_rule" "my_lb_listener_rule" {
-  listener_arn = my_lb_listener.arn
+  listener_arn = my_lb_listener.my_lb_listener_rulearn
   priority     = 100
 
   action {
