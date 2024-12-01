@@ -63,6 +63,7 @@ resource "aws_autoscaling_group" "asg_home" {
   name                 = "asg_home"
   max_size             = 4
   min_size             = 2
+  desired
   launch_configuration = aws_launch_configuration.lc_home
   vpc_zone_identifier  = [var.subnet_id_1, var.subnet_2]
 }
