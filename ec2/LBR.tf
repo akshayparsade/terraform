@@ -16,7 +16,7 @@ resource "aws_lb_target_group" "tg_laptop" {
     health_check {
         path ="/laptop/"
         port = 80
-        protocol = "TCP"   
+        protocol = "HTTP"   
     }
 }
 
