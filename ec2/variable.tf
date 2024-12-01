@@ -7,7 +7,7 @@ variable "instance_type" {
 }
 
 variable "key_pair" {
-    default = "UBUNTU"
+    default = "N"
 }
 
 variable "subnet_id_1" {
@@ -15,7 +15,7 @@ variable "subnet_id_1" {
 }
  
 variable "subnet_id_2" {
-    default = "subnet-02f445042193b5e90"
+    default = "ssubnet-0aac62ec5887c6aad"
 }
 
 variable "vpc_id"{
