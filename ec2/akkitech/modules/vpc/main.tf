@@ -41,7 +41,7 @@ resource "aws_default_route_table" "rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    gatway_id = aws_internet_gateway.
+    gatway_id = aws_internet_gateway.igw.id
   }
 
   tags = {
