@@ -8,5 +8,5 @@ module "vpc_module" {
     project = "akkitech"
     env = "dev"
     private_subnet_cidr = "10.0.0.0/20"
-    private_subnet_cidr = "10.0.15.0/
+    private_subnet_cidr = "10.0.15.0/20"
 }
