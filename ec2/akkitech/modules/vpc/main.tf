@@ -27,11 +27,11 @@ resource "aws_subnet" "private_subnet" {
   }
 }
 
-resource "aws_internet_gateway" "gw" {
+resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.my_vpc.id
 
   tags = {
-    Name = "${var.project}-private_subnet"
+    Name = "${var.project}-igw"
     env = var.env
   }
 }
