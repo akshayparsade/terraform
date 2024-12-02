@@ -8,5 +8,5 @@ module "vpc_module" {
     project = var.project
     env = "dev"
     private_subnet_cidr = var.private_subnet_cidr
-    private_subnet_cidr = "10.0.15.0/20"
+    private_subnet_cidr = 
 }
