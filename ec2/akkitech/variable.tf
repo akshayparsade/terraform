@@ -1,1 +1,2 @@
-variable "
+variable "cidr" {}
+va
