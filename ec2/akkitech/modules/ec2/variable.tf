@@ -10,9 +10,9 @@
     default =
   }
 
-variable "instance_type" {
+variable "key_pair" {
     default =
   }
-variable "instance_type" {
+variable "pri" {
     default =
   }
