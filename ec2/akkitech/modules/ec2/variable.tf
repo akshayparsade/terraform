@@ -6,10 +6,10 @@
     default =
   }
 
-  variable "instance_type" {
+  variable "security_group_id" {
     default =
   }
-  
+
 variable "instance_type" {
     default =
   }
