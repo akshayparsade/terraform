@@ -3,8 +3,8 @@
   }
 
   variable "instance_type" {
-    default =
-  }
+    default = "t2.micro"
+  } 
 
   variable "security_group_id" {
     default =
