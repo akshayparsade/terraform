@@ -4,5 +4,5 @@ env         = "dev"
 pri_cidr   = "192.168.0.0/20" 
 pub_cidr   ="192.168.16.0/20"
 image_id   = "ami-012967cc5a8c9f891"
-instance_type
-login-key
+instance_type = "t2.micro"  
+login-key   = 
