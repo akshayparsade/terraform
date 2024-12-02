@@ -1,5 +1,5 @@
 terraform {
-  
+  required_version = 
 }
 provider "aws" {
     region = "us-east-1"
