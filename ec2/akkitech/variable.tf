@@ -5,3 +5,7 @@ variable "vpc_cidr" {
 variable "project" {
     default = "akkitech"
 }
+
+variable "private_subnet_cidr" {
+    default 
+}
