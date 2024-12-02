@@ -4,3 +4,4 @@ env
 pri_cidr
 pub_cidr
 image_id
+instance_type
