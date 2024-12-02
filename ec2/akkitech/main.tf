@@ -10,7 +10,7 @@ resource "aws_vpc" "my_vpc" {
 # Create Subnets
 resource "aws_subnet" "public_subnet" {
   vpc_id            = aws_vpc.my_vpc.id
-  cidr_block        = 
+  cidr_block        = var.private_subnet
   map_public_ip_on_launch = true
   availability_zone = "us-east-1a"
   tags = {
