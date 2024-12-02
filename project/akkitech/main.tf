@@ -17,7 +17,7 @@ module "ec2_module" {
     instance_type = var.instance_type
     security_group_id = var.saws_security_group.my_sg.id
     key_pair = var.login-key
-    private_subnet_id = module
+    private_subnet_id = module.vpc_module
     public_subnet_id =
 
 }
