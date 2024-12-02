@@ -1,4 +1,3 @@
 variable "cidr" {}
-variable "project" {
-    
-}
+variable "project" {}
+variable "
