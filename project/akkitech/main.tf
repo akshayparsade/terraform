@@ -3,6 +3,7 @@ terraform {
   backend "s3" {
     bucket = "akkitech-tf-bucket"
     region = "us-east-1"
+    key = 
   }
 }
 provider "aws" {
