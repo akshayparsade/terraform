@@ -7,5 +7,5 @@ module "vpc_module" {
     cidr = "10.0.0.0/16"
     project = "akkitech"
     env = "dev"
-    pri
+    private_subnet_cidr = 
 }
