@@ -15,7 +15,9 @@ module "ec2_module" {
     source = "./module/ec2"
     image_id =
     instance_type =
+    security_group_id =
     
+
 
 
 }
