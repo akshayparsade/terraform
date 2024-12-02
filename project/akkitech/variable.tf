@@ -25,6 +25,6 @@ variable = "instance_type" {
     default = "t2.micro"
 }
 
-variable = "image_id" {
-    default = "ami-0453ec754f44f9a4a"
+variable = "login-key" {
+    default = "N.vi"
 }
