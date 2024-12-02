@@ -25,7 +25,6 @@ resource "aws_security_group" "my_sg" {
     to_port           = 0
     cidr_blocks       = ["0.0.0.0/0"]
   }
-
 }
 
 resource "aws_instance" "my_instance" {
