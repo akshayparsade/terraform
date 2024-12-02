@@ -17,9 +17,10 @@ variable "pub_cidr" {
    default = "10.0.16.0/20"
 }     
 
-variable = "image_id" {
+variable "image_id" {
     default = "ami-012967cc5a8c9f891"
 }
+
 
 variable = "instance_type" {
     default = "t2.micro"
