@@ -1,5 +1,5 @@
 vpc_cidr = "192.168.0.0/16"
-project_name
+project_name = "akki
 env
 pri_cidr
 pub_cidr
