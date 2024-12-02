@@ -7,5 +7,5 @@ variable "project" {
 }
 
 variable "private_subnet_cidr" {
-    default 
+    default =
 }
