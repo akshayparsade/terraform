@@ -16,7 +16,7 @@ module "ec2_module" {
     image_id = var.image_id 
     instance_type = var.instance_type
     security_group_id = var.security_group_id
-    key_pair = 
+    key_pair = var.login-key
     private_subnet_id =
     public_subnet_id =
 
