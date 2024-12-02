@@ -25,7 +25,7 @@ module "ec2_module" {
 resource "aws_security_group" "my_sg" {
   name = "my_sg"
   description ="allow HTTP Port"
-  vpc_id = module.vpc_module
+  vpc_id = module.vpc_module.vpc_id
   ingress {  # for inbound
     from_port         = 80
     protocol       = "TCP"  # -1 for all ip_protocol 
