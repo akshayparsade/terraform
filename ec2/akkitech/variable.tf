@@ -1,4 +1,4 @@
 variable "cidr" {}
 variable "project" {}
 variable "env" {}
-variable "
+variable "private_subnet_cidr
