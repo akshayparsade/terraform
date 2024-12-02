@@ -45,6 +45,6 @@ resource "aws_default_route_table" "rt" {
   }
 
   tags = {
-    Name = "${var.project}-de"
+    Name = "${var.project}-aws_default_route_table"
   }
 }
