@@ -27,5 +27,5 @@ variable "instance_type" {
 }
 
 variable "login_key" {
-    default = "new-key-nv"
+    default = ""
 }
