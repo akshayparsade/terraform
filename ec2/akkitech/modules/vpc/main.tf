@@ -39,7 +39,7 @@ resource "aws_internet_gateway" "igw" {
 resource "aws_default_route_table" "rt" {
   default_route_table_id = aws_vpc.my_vpc.default_route_table_id
 
-  route = []
+  route = 
 
   tags = {
     Name = "example"
