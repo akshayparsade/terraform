@@ -36,7 +36,7 @@ resource "aws_internet_gateway" "igw" {
   }
 }
 
-resource "aws_default_route_table" "rt" {
+resource "aws_default_route_table" "r" {
   default_route_table_id = aws_vpc.my_vpc.default_route_table_id
 
   route {
