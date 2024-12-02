@@ -1,1 +1,3 @@
-  variable "
+  variable "image_id" {
+    
+  }
