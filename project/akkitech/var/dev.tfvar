@@ -1,3 +1,6 @@
 vpc_cidr = 
 project_name
 env
+pri_cidr
+pub_cidr
+image_id
