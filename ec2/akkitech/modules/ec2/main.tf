@@ -3,7 +3,7 @@ resource "aws_instance" "private_instance" {
     instance_type = var.instance_type
     vpc_security_group_ids = var.vpc_security_group_id
     key_name = var.key_pair
-    subnet
+    subnet_id = var.private_subnet_id
 }
 
 resource "aws_instance" "public_instance" {
@@ -11,4 +11,5 @@ resource "aws_instance" "public_instance" {
     instance_type = var.instance_type
     vpc_security_group_ids = var.vpc_security_group_id
     key_name = var.key_pair
+    subnet_id = var
 }
