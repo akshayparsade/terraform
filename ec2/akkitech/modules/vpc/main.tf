@@ -40,7 +40,7 @@ resource "aws_default_route_table" "rt" {
   default_route_table_id = aws_vpc.my_vpc.default_route_table_id
 
   route {
-    cid
+    cidr_block = ""
   }
 
   tags = {
