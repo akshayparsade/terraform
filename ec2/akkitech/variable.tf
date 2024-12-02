@@ -11,5 +11,5 @@ variable "private_subnet_cidr" {
 }
 
 variable "private_subnet_cidr" {
- =     "10.0.15.0/20"
+   default = "10.0.15.0/20"
 }     
