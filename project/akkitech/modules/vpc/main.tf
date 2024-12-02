@@ -42,7 +42,6 @@ resource "aws_default_route_table" "r" {
     cidr_block = "0.0.0.0/0"
     gatway_id = aws_internet_gateway.igw.id
   }
-
   tags = {
     Name = "${var.project}-default_rt"
     env = var.env
