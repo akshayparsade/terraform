@@ -1,3 +1,5 @@
 provider "aws" {
-    region = "us-e"
+    region = "us-east-1"
 }
+
+module "vpc_
