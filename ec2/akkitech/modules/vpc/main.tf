@@ -1,7 +1,7 @@
 # Create VPC
 resource "aws_vpc" "my_vpc" {
   cidr_block     = "10.0.0.0/16"
-  
+  map_public_ip_on_launch
   tags = {
     Name = "${var.project}-VPC"
     env = var.env
