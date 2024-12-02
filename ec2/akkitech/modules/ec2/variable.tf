@@ -13,6 +13,7 @@
 variable "key_pair" {
     default =
   }
-variable "pri" {
+  
+variable "private_subnet_id" {
     default =
   }
