@@ -15,7 +15,7 @@ module "ec2_module" {
     source = "./module/ec2"
     image_id = var.image_id 
     instance_type = var.instance_type
-    security_group_id = var.security_group_id
+    security_group_id = var.saws_security_group.my
     key_pair = var.login-key
     private_subnet_id =
     public_subnet_id =
