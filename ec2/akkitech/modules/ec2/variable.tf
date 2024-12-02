@@ -13,7 +13,11 @@
 variable "key_pair" {
     default =
   }
-  
+
 variable "private_subnet_id" {
+    default =
+  }
+
+  variable "public_subnet_id" {
     default =
   }
