@@ -3,5 +3,5 @@ variable "vpc_cidr" {
 }
 
 variable "project" {
-    default = 
+    default = "akkitech"
 }
