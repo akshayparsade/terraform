@@ -26,5 +26,5 @@ variable = "instance_type" {
 }
 
 variable = "login-key" {
-    default = "N.vi"
+    default = "N.Vergi_key"
 }
