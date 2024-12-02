@@ -1,7 +1,8 @@
 terraform {
   required_version = ">= 1.0"
   backend "s3" {
-    bucket = 
+    bucket = "akkitech-tf-bucket"
+    region
   }
 }
 provider "aws" {
