@@ -15,3 +15,11 @@ resource "aws_subnet" "public_subnet" {
     Name = "${var.project}-private_subnet"
   }
 }
+
+resource "aws_subnet" "public_subnet" {
+  vpc_id            = aws_vpc.my_vpc.id
+  cidr_block        = var.private_subnet_cidr
+  tags = {
+    Name = "${var.project}-private_subnet"
+  }
+}
