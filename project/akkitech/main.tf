@@ -11,3 +11,4 @@ module "vpc_module" {
     public_subnet_cidr = var.pub_cidr
 }
 
+module "ec2_mo
