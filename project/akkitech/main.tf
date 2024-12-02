@@ -17,7 +17,7 @@ module "ec2_module" {
     instance_type =
     security_group_id =
     key_pair = 
-    private_subnet_id
-
+    private_subnet_id =
+    public_subnet_id =
 
 }
