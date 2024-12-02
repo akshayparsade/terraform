@@ -13,6 +13,6 @@ variable "pri_cidr" {
     default ="10.0.0.0/20"
 }
 
-variable "private_subnet_cidr" {
+variable "pub_cidr" {
    default = "10.0.15.0/20"
 }     
