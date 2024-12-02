@@ -14,7 +14,7 @@ module "vpc_module" {
 module "ec2_module" {
     source = "./module/ec2"
     image_id = var.image_id 
-    instance_type =
+    instance_type = var.instance_type
     security_group_id =
     key_pair = 
     private_subnet_id =
