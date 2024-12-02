@@ -1,3 +1,12 @@
+terraform {
+  required_version = ">= 1.0"
+  backend "s3" {
+    bucket = "on-cdec-b13-terraform"
+    region = "us-east-1"
+    key = "tfstate"
+  }
+}
+
 provider "aws" {
     region = "us-east-1"
 }
