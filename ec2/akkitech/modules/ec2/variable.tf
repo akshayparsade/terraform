@@ -2,4 +2,4 @@
     default =
   }
 
-  variable "
+  variable "instance_type"{}
