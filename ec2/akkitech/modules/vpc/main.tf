@@ -46,5 +46,6 @@ resource "aws_default_route_table" "rt" {
 
   tags = {
     Name = "${var.project}-default_rt"
+    env = var.env
   }
 }
