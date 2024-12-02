@@ -6,4 +6,13 @@
     default =
   }
 
+  variable "instance_type" {
+    default =
+  }
   
+variable "instance_type" {
+    default =
+  }
+variable "instance_type" {
+    default =
+  }
