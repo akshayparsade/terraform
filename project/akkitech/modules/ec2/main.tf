@@ -9,7 +9,7 @@ resource "aws_instance" "private_instance" {
 resource "aws_instance" "public_instance" {
     ami = var.image_id
     instance_type = var.instance_type
-    vpc_security_group_ids = var.vpc_security_group_id
+    vpc_security_group_ids = var.security_group_id
     key_name = var.key_pair
     subnet_id = var.public_subnet_id
 }
