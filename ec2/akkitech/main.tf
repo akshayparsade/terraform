@@ -5,7 +5,7 @@ provider "aws" {
 module "vpc_module" {
     source = "./modules/vpc"
     cidr = var.vpc_cidr
-    project = "akkitech"
+    project = ""
     env = "dev"
     private_subnet_cidr = "10.0.0.0/20"
     private_subnet_cidr = "10.0.15.0/20"
