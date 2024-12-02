@@ -1,11 +1,4 @@
-terraform {
-  required_version = ">= 1.0"
-  backend "s3" {
-    bucket = "akkitech-tf-bucket"
-    region = "us-east-1"
-    key = "tfstate"
-  }
-}
+?
 provider "aws" {
     region = "us-east-1"
 }
