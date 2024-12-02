@@ -18,7 +18,7 @@ variable "pub_cidr" {
 }     
 
 variable = "image_id" {
-    default = "ami-0453ec754f44f9a4a"
+    default = "ami-012967cc5a8c9f891"
 }
 
 variable = "instance_type" {
