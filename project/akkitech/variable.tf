@@ -22,7 +22,7 @@ variable = "image_id" {
 }
 
 variable = "instance_type" {
-    default = "ami-0453ec754f44f9a4a"
+    default = "t2.miceo"
 }
 
 variable = "image_id" {
