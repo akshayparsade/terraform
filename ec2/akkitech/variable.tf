@@ -1,2 +1,4 @@
 variable "cidr" {}
-va
+variable "project" {
+    
+}
