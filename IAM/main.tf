@@ -22,7 +22,7 @@ resource "aws_iam_user_login_profile" "Dev_login_profile" {
 }
 
 output "access_key_id" {
-  value = aws_iam_access_key.example_access_key.id
+  value = aws_iam_access_key.Dev_access_key.id
 }
 
 output "secret_access_key" {
