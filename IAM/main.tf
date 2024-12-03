@@ -11,7 +11,7 @@ resource "aws_iam_user_policy_attachment" "s3_full_access" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
 }
 
-resource "aws_iam_access_key" "example_access_key" {
+resource "aws_iam_access_key" "Dev_access_key" {
   user = aws_iam_user.Dev_user.Dev
 }
 
