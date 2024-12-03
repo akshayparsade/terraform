@@ -12,11 +12,11 @@ resource "aws_iam_user_policy_attachment" "s3_full_access" {
 }
 
 resource "aws_iam_access_key" "example_access_key" {
-  user = aws_iam_user.Dev_user.name
+  user = aws_iam_user.Dev_user.Dev
 }
 
 resource "aws_iam_user_login_profile" "example_login_profile" {
-  user                  = aws_iam_user.Dev_user.name
+  user                  = aws_iam_user.Dev_user.Dev
   password              = "SuperSecurePassword123!" # Replace with a strong password
   password_reset_required = true # Forces the user to reset password on first login
 }
