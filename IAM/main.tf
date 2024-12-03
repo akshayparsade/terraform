@@ -17,7 +17,7 @@ resource "aws_iam_access_key" "example_access_key" {
 
 resource "aws_iam_user_login_profile" "example_login_profile" {
   user                  = aws_iam_user.example_user.name
-  password              = "Dev@#1234_IAM-ROLE # Replace with a strong password
+  password              = "Dev@#1234_IAM-ROLE" # Replace with a strong password
   password_reset_required = true # Forces the user to reset password on first login
 }
 
