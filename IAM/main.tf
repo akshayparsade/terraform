@@ -26,7 +26,7 @@ output "access_key_id" {
 }
 
 output "secret_access_key" {
-  value     = aws_iam_access_key.example_access_key.secret
+  value     = aws_iam_access_key.Dev_access_key.secret
   sensitive = true
 }
 
