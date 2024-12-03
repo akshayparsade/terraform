@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "Dev_user" {
-  name = "example-user"
+  name = "Dev-user"
 }
 
 resource "aws_iam_user_policy_attachment" "s3_full_access" {
