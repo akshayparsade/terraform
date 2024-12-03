@@ -17,7 +17,7 @@ resource "aws_iam_access_key" "Dev_access_key" {
 
 resource "aws_iam_user_login_profile" "Dev_login_profile" {
   user                  = aws_iam_user.Dev_user.Dev
-  password              = "My#Dev" # Replace with a strong password
+  password              = "My#Dev@1234" # Replace with a strong password
   password_reset_required = true # Forces the user to reset password on first login
 }
 
