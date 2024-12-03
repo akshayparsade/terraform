@@ -1,5 +1,5 @@
 module "iam_role" {
-  source  = "tsam-assumable-role-with-saml"
+  source  = "./"
 
   create_role = true
 
