@@ -1,5 +1,5 @@
 module "iam_role" {
-  source  = "./"
+  source  = "./module/IAM"
 
   create_role = true
 
