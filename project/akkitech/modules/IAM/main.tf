@@ -1,7 +1,7 @@
 module "iam_role" {
   source  = "./module/IAM"
   create_role = var.create_role
-  role_name = "role-with-saml"
+  role_name = var."
 
   tags = {
     Role = "role-with-saml"
