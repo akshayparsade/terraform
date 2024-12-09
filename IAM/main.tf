@@ -14,13 +14,6 @@ resource "aws_iam_user_policy" "s3_full_access" {
   policy = data.aws_iam_policy_document.s3_policy.json
 }
 
-# Define S3 Full Access Policy Document
-data "aws_iam_policy_document" "s3_policy" {
-  statement {
-    actions   = ["s3:*"]
-    resources = ["*"]
-  }
-}
 
 # Create Access Keys for Programmatic Access
 resource "aws_iam_access_key" "iam_user_key" {
