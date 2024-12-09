@@ -4,7 +4,7 @@ provider "aws" {
 
 # Create IAM User
 resource "aws_iam_user" "iam_user" {
-  name = "example_user"
+  name = "tf_user"
 }
 
 # Attach AWS S3 Full Access Policy
