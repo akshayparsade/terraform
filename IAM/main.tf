@@ -22,7 +22,7 @@ resource "aws_iam_access_key" "iam_user_key" {
 
 # Allow IAM User Console Login by attaching Login Profile
 resource "aws_iam_user_login_profile" "iam_user_login" {
-  user               = aws_iam_user.iam_user.name
+  user               = aws_iam_user.iam_user.tf_user
   password           = "TemporaryPassword123!" # Change this password as needed
   password_reset_required = true
 }
