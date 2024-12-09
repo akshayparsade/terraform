@@ -10,7 +10,7 @@ resource "aws_iam_user" "iam_user" {
 # Attach AWS S3 Full Access Policy
 resource "aws_iam_user_policy" "s3_full_access" {
   name   = "s3_full_access"
-  user   = aws_iam_user.iam_user.
+  user   = aws_iam_user.iam_user.tf_user
   policy = data.aws_iam_policy_document.s3_policy.json
 }
 
