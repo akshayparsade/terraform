@@ -17,7 +17,7 @@ resource "aws_iam_user_policy" "s3_full_access" {
 
 # Create Access Keys for Programmatic Access
 resource "aws_iam_access_key" "iam_user_key" {
-  user = aws_iam_user.iam_user.name
+  user = aws_iam_user.iam_user.tf_user
 }
 
 # Allow IAM User Console Login by attaching Login Profile
